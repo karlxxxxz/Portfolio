@@ -1086,3 +1086,48 @@ header .navbar ul li a:hover {
 }
 /* scroll top ends */
 
+.logo {
+  color: black; /* text color */
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.starry {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.starry i {
+  position: absolute;
+  color: black; /* ⭐ star color changed to black */
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+.starry .small {
+  font-size: 0.6rem;
+  top: -6px;
+  left: 14px;
+  animation-delay: 0.5s;
+}
+
+.starry .tiny {
+  font-size: 0.4rem;
+  top: 10px;
+  left: -6px;
+  animation-delay: 1s;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}

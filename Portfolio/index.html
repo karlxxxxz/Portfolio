@@ -15,7 +15,16 @@
 </head>
 <body>
 <header>
-       <a href="/" class="logo"><i class="fa-solid fa-moon"></i>  Karl Kent</a>
+    <a href="/Portfolio/index.html" class="logo">
+      <span class="starry">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star small"></i>
+        <i class="fa-solid fa-star tiny"></i>
+      </span>
+  Karl Kent
+    </a>
+
+
 
 
         <div id="menu" class="fas fa-bars"></div>
@@ -410,13 +419,13 @@
 
 <!-- Flowise Embed Script -->
 <script type="module">
-  import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
-
-  Chatbot.init({
-    chatflowid: "YOUR_CHATFLOW_ID",  
-    apiHost: "http://localhost:3000"
-  });
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "7e52f6db-2d54-4737-8175-87754b1328a5",
+        apiHost: "https://cloud.flowiseai.com",
+    })
 </script>
+
 
 </body>
 </html>
