@@ -19,14 +19,19 @@
 
 <body>
   <header>
-    <a href="/Portfolio/index.html" class="logo">
-      <span class="starry">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star small"></i>
-        <i class="fa-solid fa-star tiny"></i>
-      </span>
-      Karl Kent
-    </a>
+    <div class="logo-section">
+      <a href="/Portfolio/index.html" class="logo">
+        <span class="starry">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star small"></i>
+          <i class="fa-solid fa-star tiny"></i>
+        </span>
+        Karl Kent
+      </a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
 
 
 
@@ -62,7 +67,7 @@
                 class="fab fa-facebook"></i></a></li>
           <li><a class="instagram" aria-label="Instagram" href=""><i class="fab fa-instagram" target="_blank"></i></a>
           </li>
-          <li><a class="linkedin" aria-label="LinkedIn" href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/karl-kent-amarila" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li><a class="twitter" aria-label="twitter" href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
           <li><a class="github" aria-label="GitHub" href="https://github.com/karlxxxxz" target="_blank"><i
                 class="fab fa-github"></i></a></li>
@@ -480,10 +485,10 @@
         tooltip: { showTooltip: false },
         chatWindow: {
           showTitle: true,
-          title: 'REN-AI Assistant',
+          title: 'Karl-AI Assistant',
           titleAvatarSrc: 'https://icons.iconarchive.com/icons/iconarchive/robot-avatar/512/Cyan-1-Robot-Avatar-icon.png',
           welcomeMessage: 'Ask me anything about the portfolio!',
-          backgroundColor: '#0a0a0ac0',
+          backgroundColor: '#1a1a1a',
           fontSize: 16,
           starterPrompts: [
             'Tell me about his skills',
@@ -491,24 +496,24 @@
             'What is his background?'
           ],
           sourceDocsTitle: 'Sources:',
-          titleBackgroundColor: '#00CED180',
+          titleBackgroundColor: '#333333',
           titleTextColor: '#ffffff',
           botMessage: {
-            backgroundColor: '#1f2937',
+            backgroundColor: '#2d2d2d',
             textColor: '#e5e7eb',
             showAvatar: true,
             avatarSrc: 'https://icons.iconarchive.com/icons/iconarchive/robot-avatar/512/Cyan-1-Robot-Avatar-icon.png'
           },
           userMessage: {
-            backgroundColor: '#00CED1',
-            textColor: '#000000',
+            backgroundColor: '#404040',
+            textColor: '#ffffff',
             showAvatar: false
           },
           textInput: {
             placeholder: 'Type your message...',
-            backgroundColor: '#1f2937',
+            backgroundColor: '#2d2d2d',
             textColor: '#e5e7eb',
-            sendButtonColor: '#00CED1',
+            sendButtonColor: '#555555',
             placeholderTextColor: '#9ca3af',
             maxChars: 100,
             autoFocus: true
