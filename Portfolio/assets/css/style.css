@@ -52,6 +52,10 @@ body.dark-mode header .logo {
   color: #e5e7eb;
 }
 
+body.dark-mode header .logo .logo-img {
+  filter: drop-shadow(0 0 10px rgba(0, 206, 209, 0.8)) drop-shadow(0 0 20px rgba(0, 206, 209, 0.4));
+}
+
 body.dark-mode header .navbar ul li a {
   color: #e5e7eb;
 }
@@ -257,7 +261,7 @@ header {
 }
 
 body.dark-mode .theme-toggle {
-  background: rgba(0, 206, 209, 0.15);
+  background: linear-gradient(135deg, rgba(0, 206, 209, 0.25) 0%, rgba(0, 206, 209, 0.08) 100%);
   border-color: #00CED1;
   color: #00CED1;
 }
@@ -287,6 +291,12 @@ header .logo {
 }
 header .logo i {
   font-size: 2.2rem;
+}
+header .logo .logo-img {
+  height: 44px;
+  width: 44px;
+  margin-right: 0.5rem;
+  object-fit: contain;
 }
 header .logo:hover {
   color: #046bda;
@@ -1284,55 +1294,6 @@ header .navbar ul li a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.starry {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.starry i {
-  position: absolute;
-  color: black; /* ⭐ star color changed to black */
-  animation: twinkle 2s infinite ease-in-out;
-}
-
-body.dark-mode .starry i {
-  color: #00CED1; /* Cyan color for stars in dark mode */
-}
-
-body.dark-mode .starry i.small {
-  animation-delay: 0.5s;
-}
-
-body.dark-mode .starry i.tiny {
-  animation-delay: 1s;
-}
-
-.starry .small {
-  font-size: 0.6rem;
-  top: -6px;
-  left: 14px;
-  animation-delay: 0.5s;
-}
-
-.starry .tiny {
-  font-size: 0.4rem;
-  top: 10px;
-  left: -6px;
-  animation-delay: 1s;
-}
-
-@keyframes twinkle {
-  0%, 100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.3);
-  }
 }
 
 /* ----------------------------- */
